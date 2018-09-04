@@ -7,4 +7,6 @@ RUN go get -u github.com/onsi/ginkgo/ginkgo && go get -u github.com/onsi/gomega/
 
 WORKDIR /go/src
 
-ENTRYPOINT ["ginkgo", "-r", "$LOCATION"]
+COPY go-entrypoint ./go-entrypoint
+RUN chmod +x go-entrypoint
+ENTRYPOINT ["./go-entrypoint"]
