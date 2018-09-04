@@ -1,5 +1,5 @@
 FROM golang:alpine3.8
-MAINTAINER Ali Al-SHabibi <alshabibi.ali@gmail.com>
+MAINTAINER Ali Al-Shabibi <alshabibi.ali@gmail.com>
 
 RUN apk update && apk add git gcc musl-dev
 
